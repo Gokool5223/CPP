@@ -1,0 +1,3107 @@
+Most college students feel stiff struggle learning programming logic in college days. Below is list 101 C Programs, which will help you build basic concepts of control structures, conditional statements and so on. Programs are written for basic to advance logic building. 
+==================================================================================================
+
+001. Write a program to print a string in C language
+    #include<stdio.h>
+    #include<conio.h>
+    main()
+    {
+      clrscr();
+      printf("\nGokool");
+      getch();
+    }
+
+===============================================================================================
+
+002. Write a program to accept values of two numbers and print their addition
+
+    #include<stdio.h>
+    #include<conio.h> 
+    main()
+    {
+     int a,b,c;
+     clrscr();
+     printf("Enter number 1: ");
+     scanf("%d",&a);
+     printf("Enter number 2: ");
+     scanf("%d",&b);
+     c=a+b;
+     printf("Addition is   : %d",c);
+     getch();
+    }
+
+=================================================================================================
+
+003. Write a program to accept values of two numbers and print their subtraction
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int a,b,c;
+     clrscr();
+     printf("Enter number 1: ");
+     scanf("%d",&a);
+     printf("Enter number 2: ");
+     scanf("%d",&b);
+     c=a-b;
+     printf("Subtraction   : %d",c);
+     getch();
+    }
+
+
+==================================================================================================
+
+004. Write a program to accept values of two numbers and print their multiplication in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int a,b,c;
+     clrscr();
+     printf("Enter number 1: ");
+     scanf("%d",&a);
+     printf("Enter number 2: ");
+     scanf("%d",&b);
+     c=a*b;
+     printf("Multiplication: %d",c);
+     getch();
+    }
+
+=============================================================================================
+
+
+005. Write a program to accept values of two numbers and print their division in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     float a,b,c;
+     clrscr();
+     printf("Enter number 1: ");
+     scanf("%f",&a);
+     printf("Enter number 2: ");
+     scanf("%f",&b);
+     c=a/b;
+     printf("Division is   : %f",c);
+     getch();
+    }
+
+================================================================================================
+
+006. Write a program to print area of a circle. A(circle)= 3.142 * R * R in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     float AREA,R;
+     clrscr();
+     printf("Enter Radius: ");
+     scanf("%f",&R);
+     AREA=3.14*R*R;
+     printf("Area of the given is : %6.2f",AREA);
+     getch();
+    }
+===================================================================================================
+
+007. Write a program to print area of a triangle A(Triangle)= 0.5 * B * H in C language
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     float AREA,B,H;
+     clrscr();
+     printf("Enter Base & Height: ");
+     scanf("%f%f",&B,&H);
+     AREA=0.5*B*H;
+     printf("Area of the given is : %6.2f",AREA);
+     getch();
+    }
+=============================================================================================
+
+008. Write a program to print simple interest SI = (PNR)/100 in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     float SI,P,N,R;
+     clrscr();
+     printf("Enter values of P, N and R: ");
+     scanf("%f%f%f",&P,&N,&R);
+     SI=(P*N*R)/100;
+     printf("Simple interest = : %6.2f",SI);
+     getch();
+    }
+
+================================================================================================
+
+009. Write a program to accept a number from user and print it’s square & cube in C language
+    #include<stdio.h> 
+    #include<conio.h>  
+    main()
+    {
+     int n, Square, Cube;
+     clrscr();
+     printf("Enter Number: ");
+     scanf("%d",&n);
+     Square=n*n;
+     Cube=n*n*n;
+     printf("\nSquare: %d\nCube: %d",Square,Cube);
+     getch();
+    }
+
+==============================================================================================
+
+010. Write a program to accept two values a & b and interchange their values in C language
+
+    #include<stdio.h>
+    #include<conio.h>   
+    main()
+    {
+     int a, b, temp;
+     clrscr();
+     printf("Enter Numbers: ");
+     scanf("%d%d",&a,&b);
+     printf("\nBefore Swapping..\na=%d,b=%d",a,b); 
+     temp=a;
+     a=b;
+     b=temp;
+     printf("\nAfter Swapping..\na=%d,b=%d",a,b);
+     getch();
+    }
+
+================================================================================================
+011. Write a program to accept roll no and marks of 3 subjects of a student, Calculate total of 3 subjects and average in C language
+
+    #include<stdio.h> 
+    #include<conio.h>  
+    main()
+    {
+      int roll_no,m1,m2,m3,total;
+      float average;
+      clrscr();
+      printf("Enter roll number : ");
+      scanf("%d",&roll_no);
+      printf("Enter marks 1 : "); 
+      scanf("%d",&m1);
+      printf("Enter marks 2 : ");
+      scanf("%d",&m2);
+      printf("Enter marks 3 : ");
+      scanf("%d",&m3);
+      total=m1+m2+m3;
+      average=total/3.0;
+      printf("\nStudent Roll Number : %d",roll_no);
+      printf("\nMarks 1 : %d",m1);
+      printf("\nMarks 2 : %d",m2);
+      printf("\nMarks 3 : %d",m3);
+      printf("\nTotal : %d ",total);
+      printf("\nAverage : %f ",average);
+      getch();
+    }
+
+===================================================================================
+
+013. Print the following output in C Language
+    
+
+    #include<stdio.h>
+    #include<conio.h>  
+     main()
+     {
+      clrscr();
+      printf("\n");
+      printf("   /\\        \n");
+      printf("  //\\\\      \n");
+      printf(" ///\\\\\\    \n");
+      printf("////\\\\\\\\  \n");
+      printf("  |||         \n");
+      printf("  |||         \n");
+      getch();
+     }
+
+
+=====================================================================================
+
+
+014. Write a program to accept two number and print largest among them in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+    int a,b;
+    clrscr();
+    printf("Enter numbers : ");
+    scanf("%d%d",&a,&b);
+    if(a>b)
+    printf("Largest value is....%d",a);
+    else
+    printf("Largest value is....%d",b);
+    getch();
+    }
+
+=================================================================================================
+
+015. Write a program to accept a number and print if the number is Positive/Negative in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int n;
+     clrscr();
+     printf("Enter number..");
+     scanf("%d",&n);
+     if(n>0)
+      printf("Given number is positive");
+     else if(n<0)
+      printf("Given number is negative");
+     else
+      printf("Number is Zero");
+     getch();
+    }
+
+===================================================================================================
+
+016. Write a program to accept a number and check if it is >10, <10 or =10 in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int n;
+      clrscr();
+      printf("enter number...");
+      scanf("%d",&n);
+      if(n>10)
+      printf("Number is greater than 10");
+      else if(n<10)
+      printf("Number is lesser than 10");
+      else
+      printf("Number is 10");
+      getch();
+    }
+
+=================================================================================================
+
+
+017. Write a program to accept a number from user and print if it is even or odd in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int n;
+     clrscr();
+     printf("Enter number...");
+     scanf("%d",&n);
+     if(n%2==0)
+      printf("Number is even...");
+     else
+      printf("Number is odd....");
+     getch();
+    }
+==============================================================================================
+
+018. Write a program to accept a number from user and print if it is divisible by 5 in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int n;
+     clrscr();
+     printf("Enter number...");
+     scanf("%d",&n);
+     if(n%5==0)
+      printf("Number is divisible by 5.");
+     else
+      printf("Number is not divisible by 5.");
+     getch();
+    }
+
+=============================================================================================
+
+019. Write a program to accept a number from user and print if it is multiple of 7 in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int n;
+     clrscr();
+     printf("Enter number...");
+     scanf("%d",&n);
+     if(n%7==0)
+      printf("Number is multiple of 7");
+     else
+      printf("Number is not multiple of 7");
+     getch();
+    }
+
+
+020. Write a program to accept two numbers from user and compare them in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int a,b;
+     clrscr();
+     printf("Enter numbers...");
+     scanf("%d%d",&a,&b);
+     if(a>b)
+      printf("a is greater than b");
+     else if(b>a)
+      printf("b is greater than a");
+     else
+      printf("both are equal");
+     getch();
+    }
+
+=========================================================================================
+
+021. Write a program to accept three numbers from user and print them in ascending and descending order in C language
+
+    #include<stdio.h>
+    void main()
+    {
+        int a,b,c;
+        printf("Enter numbers...");
+        scanf("%d%d%d",&a,&b,&c);
+        if((a>=b)&&(a>=c))
+        {
+            if(b>=c)
+            {
+                printf("\n Descending order : %d %d %d",a,b,c);
+                printf("\n Ascending order : %d %d %d",c,b,a);
+            }
+            else
+            {
+                printf("\n Descending order : %d %d %d",a,c,b);
+                printf("\n Ascending order : %d %d %d",b,c,a);
+            }
+        }
+        else if((b>=a)&&(b>=c))
+        {
+            if(a>=c)
+            {
+                printf("\n Descending order : %d %d %d",b,a,c);
+                printf("\n Ascending order : %d %d %d",c,a,b);
+            }
+            else
+            {
+                printf("\n Descending order : %d %d %d",b,c,a);
+                printf("\n Ascending order : %d %d %d",a,c,b);
+            }
+        }
+        else if((c>=a)&&(c>=b))
+        {
+            if(a>=b)
+            {
+                printf("\n Descending order : %d %d %d",c,a,b);
+                printf("\n Ascending order : %d %d %d",b,a,c);
+            }
+            else
+            {
+                printf("\n Descending order : %d %d %d",c,b,a);
+                printf("\n Ascending order : %d %d %d",a,b,c);
+            }
+        }
+    }
+
+============================================================================================
+022. Write a program to calculate roots of a quadratic equations in C language
+
+x=b^2-4ac
+if x=0 -> only one root ,
+if x>0 -> roots are distinct (–b+x)/2a & (–b-x)/2a
+if x<0 -> roots are imaginary
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     float x,r1,r2,a,b,c;
+     clrscr();
+     printf("Enter a,b,c...");
+     scanf("%f%f%f",&a,&b,&c);
+     x=b*b-4*a*c;
+     r1=(-b+x)/2*a;
+     r2=(-b-x)/2*a;
+     if(x>0)
+        printf("\nRoots are unequal...\n");
+     else if(x<0)
+        printf("\nRoots are imaginary...\n");
+     else
+        printf("\nRoots are same....\n");
+     printf("R1 = %f",r1);
+     printf("R2 = %f",r2);
+     getch();
+    }
+
+================================================================================================
+
+023. Write a program to accept roll number ,and marks for three subjects, print total marks and average, also print grade by considering following conditions
+
+
+Avg>=60 Grade A
+Avg<60,Avg >=50 Grade B
+Avg<50,Avg >=40 Grade C
+
+Grade F.
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int RollNumber,m1,m2,m3,total;
+     float avg;
+     clrscr();
+     printf("Enter Roll Number : ");
+     scanf("%d",&RollNumber);
+     printf("Enter marks for three subjects : ");
+     scanf("%d%d%d",&m1,&m2,&m3);
+     total=m1+m2+m3;
+     avg=total/3.0;
+     printf("\nTotal is....... %d",total);
+     printf("\nAverage is..... %5.2f %",avg);
+     if(avg>=60)
+      printf("\nGrade : A");
+    else if((avg>=50)&&(avg<60))
+      printf("\nGrade : B");
+     else if((avg>=40)&&(avg<50))
+      printf("\nGrade : C");
+     else
+      printf("\nGrade : F");
+     getch();
+    }
+
+===========================================================================================
+
+024. Write a Program to accept user’s marital status, gender and age to check if he/she is eligible for marriage or not.
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+       int age;
+       char MaritalStatus,Gender;
+       clrscr();
+     printf("Enter MaritalStatus, Gender, Age : (e.g. m,f,25) : ");
+       scanf("%c,%c,%d",&MaritalStatus,&Gender,&age);
+       if(MaritalStatus=='m')
+       {
+        printf("You can not marry!");
+       }
+       else if(MaritalStatus=='u')
+       {
+        if(Gender=='m')
+        {
+          if(age>=21)
+              printf("You can marry!");
+          else
+              printf("You can not marry!");
+        }
+        else if(Gender=='f')
+        {
+          if(age>=18)
+              printf("You can marry!");
+          else
+              printf("You can not marry!");
+        }
+        else
+              printf("Invalid input Gender");
+       }
+       else
+    printf("Invalid input Marital Status ");
+       getch();
+    }
+
+=============================================================================================
+025. Write a Program to print numbers 1 to n using while loop in C language
+
+    #include<stdio.h>
+    #include<conio.h>   
+    main()
+    {
+      int i=1,n;
+      clrscr();
+      printf("Enter n : ");
+      scanf("%d",&n);
+      while(i<=n)
+      {
+         printf("%d\t",i);
+         i++;
+      }
+      getch();
+    }
+
+=============================================================================================
+
+026. Write a Program to print numbers n to 1 using Do While loop in C language
+
+    #include<stdio.h>
+    #include<conio.h>   
+    main()
+    {
+      int i=1,n;
+      clrscr();
+      printf("Enter n : ");
+      scanf("%d",&n);
+      i=n;
+      do
+      {
+         printf("%d\t",i);
+         i--;
+      }while(i>=1);
+      getch();
+    }
+
+================================================================================================
+
+027. Write a Program to print first n even numbers in C language
+
+    #include<stdio.h>
+    void main()
+    {
+        int i=1,n,count=2;
+        printf("Enter n : ");
+        scanf("%d",&n);
+        while(count<=n)
+        {
+            printf("%d\t",i);
+            i=i+2;
+            count++;
+        }
+        getch();
+    }
+
+=============================================================================================
+028. Write a Program to print first n odd numbers in C language
+
+    #include<stdio.h>
+    void main()
+    {
+      int i=1,n,count=1;
+      printf("Enter n : ");
+      scanf("%d",&n);
+      
+      while(count<=n)
+      {
+          printf("%d\t",i);
+          i=i+2;
+          count++;
+      }
+      getch();
+    }
+
+==================================================================================================
+
+029. Write a Program to accept a number and print the number in reverse order. E.g. if 1324 is the number then the output will be 4231 in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int rem,n;
+      clrscr();
+      printf("Enter n : ");
+      scanf("%d",&n);
+      while(n>0)
+      {
+         rem=n%10;
+         printf("%d",rem);
+         n=n/10;
+      }
+      getch();
+    }
+============================================================================================
+
+030. Write a Program to accept a number and print sum of it’s digits in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int rem,sum=0,n
+      clrscr();
+      printf("Enter n : ");
+      scanf("%d",&n);
+      while(n>0)
+      {
+         rem=n%10;
+         sum=sum+rem;
+         n=n/10;
+      }
+      printf("Sum of digits....%d",sum);
+      getch();
+    }
+
+=====================================================================================
+
+
+031. Write a program to accept a number from user and check it it is Armstrong number or not i.e. 153 = 1^3 + 5^3 + 3^3 = 153 in C language
+
+
+    #include <stdio.h>
+    #include <conio.h>
+    main()
+    {
+      int temp,rem,sum=0,n;
+      clrscr();
+      printf("Enter n : ");
+      scanf("%d", &n);
+      temp=n;
+      while(n > 0)
+      {
+         rem=n%10;
+         sum=sum+rem*rem*rem;
+         n=n/10;
+      }
+      if(temp==sum)
+        printf("Armstrong Number");
+      else
+        printf("Not an Armstrong Number");
+      getch();
+    }
+
+==============================================================================================
+
+032. Write a program to print table of a given number n in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    { 
+     int i,n;
+     clrscr();
+     printf("Enter number : ");
+     scanf("%d",&n);
+     for(i=1;i<=10;i++)
+      printf("%d X %d = %d\n",n,i,n*i);
+     getch();
+    }
+
+================================================================================================
+
+033. Write a program to print sum of given first n numbers in C language
+
+    #include<stdio.h> 
+    #include<conio.h>  
+    main()
+    {
+     int n,newn,i,sum=0;
+     clrscr();
+     printf("Enter number : ");
+     scanf("%d",&n);
+     printf("Numbers entered....\n");
+     for(i=1;i<=n;i++)
+     {
+      scanf("%d",&newn);
+      sum=sum+newn;
+     }
+     printf("Sum of given n digits is... %d",sum);
+    }
+
+============================================================================================
+
+034. Write a program to print following outputs in C language
+
+* * * * * *
+* * * * * *
+* * * * * *
+* * * * * *
+* * * * * *
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=1;i<=n;i++)
+      {
+        for(j=1;j<=n;j++)
+          {
+           printf("*");
+          }
+        printf("\n");
+      }
+      getch();
+    }
+
+
+================================================================================================
+035. Write a program to print following outputs in C language
+
+*
+* *
+* * *
+* * * *
+* * * * *
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=1;i<=n;i++)
+      {
+        for(j=1;j<=i;j++)
+          {
+           printf("*");
+          }
+        printf("\n");
+      }
+      getch();
+    }
+
+==============================================================================================
+
+036. Write a program to print following outputs in C language
+
+* * * * *
+* * * *
+* * *
+* *
+*
+
+    #include<stdio.h> 
+    #include<conio.h>  
+    main()
+    {
+      int i,j,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=n;i>=1;i--)
+      {
+        for(j=1;j<=i;j++)
+          {
+           printf("*");
+          }
+        printf("\n");
+      }
+      getch();
+    }
+
+====================================================================================
+
+037. Write a program to print following outputs in C language 
+
+* * * * *
+  * * * *
+    * * *
+      * *
+        *
+
+    #include<stdio.h> 
+    #include<conio.h>  
+    main()
+    {
+      int i,j,k,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=1;i<=n;i++)
+      {
+        for(k=1;k<i;k++)
+          {
+           printf(" ");
+          }
+        for(j=i;j<=n;j++)
+          {
+           printf("*");
+          }
+        printf("\n");
+      }
+      getch();
+    }
+
+
+===========================================================================================
+
+
+038. Write a program to print following outputs in C language
+
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,k,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=n;i>=1;i--)
+      {
+        for(k=1;k<=(n-i);k++)
+          {
+           printf(" ");
+          }
+        for(j=1;j<=i;j++)
+          {
+           printf("*");
+          }
+        printf("\n");
+      }
+      getch();
+    }
+
+=================================================================================================
+
+039. Write a program to print following outputs in C language
+
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,k,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=1;i<=n;i++)
+      {
+        for(k=1;k<=(n-i);k++)
+          {
+           printf(" ");
+          }
+        for(j=1;j<=i;j++)
+          {
+           printf("*");
+          }
+        for(j=2;j<=i;j++)
+          {
+           printf("*");
+          }
+        printf("\n");
+      }
+      getch();
+    }
+
+=============================================================================================
+
+040. Write a program to print following outputs in C language
+
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *   
+        *
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,k,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=n;i>=1;i--)
+      {
+        for(k=1;k<=(n-i);k++)
+          {
+           printf(" ");
+          }
+        for(j=1;j<=i;j++)
+          {
+           printf("*");
+          }
+        for(j=2;j<=i;j++)
+          {
+           printf("*");
+      }
+        printf("\n");
+      }
+      getch();
+    }
+
+==================================================================================================
+
+041. Write a program to print following outputs in C language
+
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *   
+        *
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,k,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=1;i<=n;i++)
+      {
+        for(k=1;k<=(n-i);k++)
+          {
+           printf(" ");
+          }
+        for(j=1;j<=i;j++)
+          {
+           printf("*");
+          }
+        for(j=2;j<=i;j++)
+          {
+           printf("*");
+          }
+        printf("\n");
+      }
+      for(i=n-1;i>=1;i--)
+      {
+        for(k=1;k<=(n-i);k++)
+          {
+           printf(" ");
+          }
+        for(j=1;j<=i;j++)
+          {
+           printf("*");
+          }
+        for(j=2;j<=i;j++)
+          {
+           printf("*");
+          }
+        printf("\n");
+    }
+      getch();
+    }
+
+===================================================================================================
+
+
+042. Write a program to print following outputs in C language
+
+1
+12
+123
+1234
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,k,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=1;i<=n;i++)
+      {
+        for(j=1;j<=i;j++)
+          printf("%d",j);      
+        printf("\n");
+      }
+      getch();
+    }
+
+==============================================================================================
+
+043. Write a program to print following outputs in C language
+
+1
+22
+333
+4444
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,k,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      for(i=1;i<=n;i++)
+      {
+        for(j=1;j<=i;j++)
+          printf("%d",i);
+        printf("\n");
+      }
+      getch();
+    }
+
+
+===========================================================================================
+044. Write a program to print following outputs in C language
+
+   A
+  BBB
+ CCCCC
+DDDDDDD
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,k,n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      //ASCII Code for 'A' is 65
+      for(i=1;i<=n;i++)
+      {
+        for(k=1;k<=(n-i);k++)
+          {
+           printf(" ");
+          }
+        for(j=1;j<=i;j++)
+          {
+           printf("%c",64+i);
+          }
+        for(j=2;j<=i;j++)
+          {
+           printf("%c",64+i);
+          }
+        printf("\n");
+      }
+      getch();
+    }
+================================================================================================
+
+045. Write a program to print following outputs in C language
+
+ABCDEEDCBA
+ABCD  DCBA
+ABC    CBA
+AB      BA
+A        A
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,n,j,k;
+      clrscr();
+      printf("Enter number........");
+      scanf("%d",&n);
+      for(i=n-1;i>=0;i--)
+      {
+        for(j=0;j<=i;j++)
+          printf("%c",65+j);
+        for(k=1;k<(n-i);k++)
+          printf("  ");
+        for(j=i;j>=0;j--)
+          printf("%c",65+j);
+      printf("\n");
+      }
+      getch();
+    }
+=================================================================================================
+
+046. Write a program to print following outputs in C language
+
+
+1
+11
+121
+1231
+12341
+123451
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,n;
+      clrscr();
+      printf("Enter number...");
+      scanf("%d",&n);
+      for(i=0;i<=n;i++)
+      {
+        for(j=1;j<=i;j++)
+        {
+          printf("%d",j);
+        }
+        printf("1\n");
+      }
+      getch();
+    }
+
+
+==========================================================================================
+047. Write a program to accept a number from user and print it’s factorial in C language
+
+
+Eg: factorial of 5 is:-
+5! = 5 * 4 * 3 * 2 * 1=120
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,fact=1,n;
+      clrscr();
+      printf("Enter number...");
+      scanf("%d",&n);
+      for(i=1;i<=n;i++)
+        fact=fact*i;
+      printf("facttorialof the given number is...%d",fact);
+      getch();
+    }
+
+=================================================================================================
+
+048. Write a program to accept a number from user and print if it is prime or not in C language
+
+    #include<conio.h>  
+    #include<process.h>
+    main()
+    {
+      int i,n;
+      clrscr();
+      printf("Enter number...");
+      scanf("%d",&n);
+      for(i=2;i<=n/2;i++)
+      {
+        if(n%i==0)
+        {
+        printf("Not Prime");
+        getch();
+        exit(0);
+        }
+      }
+      printf("Prime ");
+      getch();
+    }
+
+=============================================================================================
+
+049. Write a program to accept a number and print prime numbers between 2 and n in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<process.h>
+    main()
+    {
+      int i,flag=1,n,newn;
+      clrscr();
+      printf("Enter number...");
+      scanf("%d",&n);
+      for(newn=2;newn<=n;newn++)
+      {
+        flag=1;
+        for(i=2;i<=newn/2 ;i++)
+        {
+          if(newn%i==0)
+          {
+          flag=0;
+          break;
+          }
+        }
+        if(flag==1)
+          printf("%d ",newn);
+      }
+      getch();
+    }
+
+
+
+============================================================================================
+
+050. Write a program to accept a number and print fibonacci series upto that level in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int pre=1,cur=1,temp,i,n;
+            clrscr();
+      printf("Enter number...");
+      scanf("%d",&n);
+      printf("%d\t%d",pre,cur);
+      for(i=3;i<=n;i++)
+        {
+         temp=cur;
+         cur=pre+cur;
+         pre=temp;
+         printf("\t%d",cur);
+        }
+      getch();
+    }
+
+
+==========================================================================================
+
+051. Write a program to print digits, alphabets in capital and lower case in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i;
+      clrscr();
+      for(i=65;i<=90;i++)
+          printf("%c  ",i);
+      printf("\n\n\n\n");
+      for(i=97;i<=122;i++)
+          printf("%c  ",i);
+      printf("\n\n\n\n");
+      for(i=48;i<=57;i++)
+          printf("%c\t",i);
+      getch();
+    }
+=================================================================================================
+
+052. Write a program to accept a number n from user and Add n terms of the series in C language
+
+1/2! + 2/3! + 3/4! + 4/5! + 5/6! + ………
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,n;
+      float sum=0,fact=1;
+      clrscr();
+      printf("Enter number....");
+      scanf("%d",&n);
+      for(i=1;i<=n;i++)
+      {
+        fact=1;
+        for(j=1;j<=i+1;j++)
+          fact=fact*j;
+      sum=sum+i/fact;
+      }
+      printf("Sum of the series....%f",sum);
+      getch();
+    }
+==============================================================================================
+
+
+053. Write a program to read n numbers (Xi) from the user and print out their average and standard deviation. Formulae are
+
+
+Average = (Sum of Xi)/n
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int n,i,newn,sum_avg=0;
+      float avg;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      printf("Enter numbers...");
+      for(i=1;i<=n;i++)
+      {
+        scanf("%d",&newn);
+        sum_avg=sum_avg+newn;
+      }
+      avg=sum_avg/(float)n; //Type casting.
+      printf("\nAverage = %f",avg);
+      getch();
+    }
+
+================================================================================================
+
+054. Write a program to print out ASCII chart on a single screen (all 256 characters from 0 to 255) in a tabular form. The ASCII code should be followed by the corresponding character in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int i;
+     clrscr();
+     for(i=0;i<=255;i++)
+      printf("%d-%c\t",i,i);
+     getch();
+    }
+
+
+===========================================================================================
+
+055. Write a program to print following output
+
+
+******************************* 
+*                             *
+*                             *  
+*                             *
+*******************************
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j;
+      clrscr();
+      for(i=1;i<=80;i++)
+        printf("*");
+      for(i=2;i<=23;i++)
+      {
+        printf("*");
+        for(j=2;j<=79;j++)
+          printf(" ");
+        printf("*");
+      }
+      for(i=1;i<=80;i++)
+        printf("*");
+      getch();
+    }
+
+
+
+=======================================================================================
+
+056. Write a program to print following output
+
+
+******************************* 
+*                             *
+*                             *  
+*                             *
+*******************************
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j;
+      clrscr();
+      for(i=1;i<=80;i++)
+        printf("*");
+      for(i=2;i<=23;i++)
+      {
+        printf("*");
+        for(j=2;j<=79;j++)
+          printf(" ");
+        printf("*");
+      }
+      for(i=1;i<=80;i++)
+        printf("*");
+      getch();
+    }
+
+
+===========================================================================================
+
+
+056. Write a program to print following output
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int n;
+      clrscr();
+      printf("Enter number...");
+      scanf("%1d",&n);  //%1d to scan single integer
+      switch(n)
+      {
+        case 0 : printf("Zero");break;
+        case 1 : printf("One");break;
+        case 2 : printf("Two");break;
+        case 3 : printf("Three");break;
+        case 4 : printf("Four");break;
+        case 5 : printf("Five");break;
+        case 6 : printf("Six");break;
+        case 7 : printf("Seven ");break;
+        case 8 : printf("Eigth ");break;
+        case 9 : printf("Nine ");break;
+      }
+      getch();
+    }
+
+============================================================================================
+
+058. Write a program to accept a number from user and print that number in words but in reverse order in C language
+
+E.g. 153 -> THREE FIVE ONE
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int n,rem;
+      clrscr();
+      printf("Enter number...");
+      scanf("%d",&n);
+      while(n>0)
+      {
+        rem=n%10;
+        switch(rem)
+        {
+          case 0 : printf("Zero");break;
+          case 1 : printf("One");break;
+          case 2 : printf("Two");break;
+          case 3 : printf("Three");break;
+          case 4 : printf("Four");break;
+          case 5 : printf("Five");break;
+          case 6 : printf("Six");break;
+                      case 7 : printf("Seven");break;
+          case 8 : printf("Eigth");break;
+          case 9 : printf("Nine");break;
+        }
+        n=n/10;
+      }
+      getch();
+    }
+
+===============================================================================================
+
+059. Write a Program to accept two numbers and a operator (+, -, *, / from user and complete that particular operation only in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int n,rem,a,b;
+      char op;
+      clrscr();
+      printf("Enter Operator(+,-,*,/)...");
+      scanf("%c",&op);
+      printf("Enter numbers...");
+      scanf("%d%d",&a,&b);
+      switch(op)
+      {
+      case '+' : printf("Result : %d ",a+b);break;
+      case '-' : printf("Result : %d ",a-b);break;
+      case '*' : printf("Result : %d ",a*b);break;
+      case '/' : printf("Result : %d ",a/b);break;
+      default  : printf("Invalid operator....");
+      }
+      getch();
+    }
+
+=======================================================================================
+060. Write a program to accept two numbers from user and print it’s addition,subtraction,multiplication,division using different functions in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    int add(int x,int y)
+    {
+     return(x+y);
+    }
+    int sub(int x,int y)
+    {
+     return(x-y);
+    }
+    int mul(int x,int y)
+    {
+     return(x*y);
+    }
+    int div(int x,int y)
+    {
+     return(x/y);
+    }
+    main()
+    {
+      int a,b;
+      clrscr();
+      printf("Enter numbers : \n");
+      scanf("%d%d",&a,&b);
+      printf("\nAddition       : %d\n",add(a,b));
+      printf("\nSubtraction    : %d\n",sub(a,b));
+      printf("\nMultiplication : %d\n",mul(a,b));
+      printf("\nDivision       : %d\n",div(a,b));
+    getch();
+    }
+
+================================================================================================
+
+
+061. Write a program to accept a number from user and print it’s factorial, check if it prime or not , and print it’s fibbonacci series using different functions in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>
+     
+    fact(int x)
+    {
+      int i,fact=1;
+      for(i=1;i<=x;i++)
+        fact=fact*i;
+      printf("Factorial is : %d",fact);
+    }
+     
+    IsPrime(int x)
+    {
+      int i;
+      for(i=2;i<x-1;i++)
+      {
+        if(x%i==0)
+          {
+          printf("\nNot a Prime Number\n");
+          return 0;
+          }
+      }
+      printf("\nIt is a Prime number\n");
+    }
+     
+    fibbo(int x)
+    {
+      int pre=1,cur=1,i,temp;
+      printf("%d %d",pre,cur);
+      for(i=3;i<=x;i++)
+      {
+        temp=cur;
+        cur=pre+cur;
+        pre=temp;
+        printf(" %d",cur);
+      }
+    }
+    main()
+    {
+      int n;
+      clrscr();
+      printf("Enter number...");
+      scanf("%d",&n);
+      fact(n);
+      IsPrime(n);
+      fibbo(n);
+            getch();
+    }
+
+===========================================================================================
+
+062. Write a program to calculate square and cube of a given number in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    int square(int x)
+    {
+      return(x*x);
+    }
+    int qube(int x)
+    {
+      return(x*x*x);
+    }
+    main()
+    {
+      int n;
+      clrscr();
+      printf("Enter number.....");
+      scanf("%d",&n);
+      printf("\nSquare : %d\n",square(n));
+      printf("\nQube   : %d\n",qube(n));
+      qube(n);
+      getch();
+    }
+
+=========================================================================================
+
+063. Write a program to accept two numbers from user and swap their values using call by reference method in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<process.h>
+    swap(int *x ,int *y)
+    {
+      int temp;
+      temp=*x;
+      *x=*y;
+      *y=temp;
+    }
+    main()
+    {
+      int a,b;
+      clrscr();
+      printf("Enter numbers : ");
+      scanf("%d%d",&a,&b);
+            printf("\nBefore Swapping a = %d, b = %d\n",a,b);
+      swap(&a,&b);
+      printf("\nAfter  Swapping a = %d, b = %d\n",a,b);
+      getch();
+    }
+
+
+============================================================================================
+
+064. Write a program using recursions for fibbonacci series in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<process.h>
+    fibbo(int pre, int cur ,int x)
+    {        int temp;
+      if(x==2)
+      {
+        getch();
+        exit(0);
+      }
+      temp=cur;
+      cur=pre+cur;
+      pre=temp;
+      printf("%d ",cur);
+      fibbo(pre,cur,x-1);
+    }
+    main()
+    {
+      int n,pre=1,cur=1;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      printf("%d %d ",pre,cur);
+            fibbo(pre,cur,n);
+      getch();
+    }
+
+
+065. Write a program to print factorial of a given number using recursive function in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<process.h>
+    int fact(int n)
+    {
+      int f;
+      if(n==1)
+        return 1;
+      else
+        f=n*fact(n-1);
+      return f;
+    }
+    main()
+    {
+      int n;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      printf("\nFactorial is...%d\n",fact(n));
+      getch();
+    }
+
+==================================================================================================
+
+066. Write a program to accept a number n from user and then accept n array elements from user and reprint them in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int n,i,a;
+     clrscr();
+     printf("Enter number...");
+     scanf("%d",&n);
+     printf("Enter array elements :\n" );
+     for(i=0;i<n;i++)
+      {
+        printf("Enter element %d : ",i+1);
+        scanf("%d",&a);
+      }
+     for(i=0;i<n;i++)
+        printf("\nElement %d : %d",i+1,a);
+     getch();
+    }
+
+===============================================================================================
+
+067. Write a program to accept a number n from user and then accept n array elements from user and reprint them in reverse order of inputs in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<stdio.h>
+    #include<conio.h>
+    main()
+    {
+     int n,i,a;
+     clrscr();
+     printf("Enter number...");
+     scanf("%d",&n);
+     printf("Enter array elements :\n" );
+     for(i=0;i<n;i++)
+      {
+        printf("Enter element %d : ",i+1);
+        scanf("%d",&a);
+      }
+     for(i=n-1;i>=0;i--)
+        printf("\nElement %d : %d",i+1,a);
+     getch();
+    }
+
+=================================================================================================
+
+068. Write a program to accept a number n from user and then accept n array elements from user and print addition of those n array elements in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+     int n,i,a,sum=0;
+     clrscr();
+     printf("Enter number...");
+     scanf("%d",&n);
+     printf("Enter array elements :\n" );
+     for(i=0;i<n;i++)
+      {
+        printf("Enter element %d : ",i+1);
+        scanf("%d",&a);
+      }
+     
+     for(i=0;i<n;i++)
+      sum=sum+a;
+     printf("\nSum of given array elements is : %d",sum);
+     getch();
+    }
+
+==============================================================================================
+069. Write a program to accept a number n from user and print fibbonacci series up to nth level using arrays in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int a,n,i;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      a=1;
+      for(i=3;i<=n;i++)
+        a;
+      for(i=1;i<=n;i++)
+        printf(" %d",a);
+      getch();
+    }
+
+=================================================================================================
+
+070. Write a program to accept a number n from user and then accept n array elements from user and print maximum and minimum array element from that set of array in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int n,i,a,max,min;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      printf("Enter array elements...\n");
+      for(i=0;i<n;i++)
+      {
+        printf("Enter element %d : ",i+1);
+        scanf("%d",&a);
+      }
+      max=min=a;
+      for(i=0;i<n;i++)
+      {
+        if(a>max)
+          max=a;
+    if(a<min)
+          min=a;
+      }
+      printf("\nMin : %d",min);
+      printf("\nMax : %d",max);
+      getch();
+    }
+
+===============================================================================================
+
+071. Write a program to accept a number n from user and then accept n array elements from user, print positive & Negative numbers separately in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int n,i,a;
+      clrscr();
+      printf("Enter number : ");
+      scanf("%d",&n);
+      printf("Enter array elements...\n");
+      for(i=0;i<n;i++)
+      {
+        printf("Enter element %d : ",i+1);
+        scanf("%d",&a);
+      }
+     
+      printf("\n\nNegative Elements : \n");
+      for(i=0;i<n;i++)
+        if(a<0)
+          printf("\n%d",a);
+     
+      printf("\n\nPositive Elements : \n");
+      for(i=0;i<n;i++)
+        if(a>0)
+          printf("\n%d",a);
+     
+      getch();
+    }
+
+===============================================================================================
+
+072. Write a program to accept a number n from user and then accept n array elements from user, print these array elements in ascending and descending order in C language
+
+
+    #include<stdio.h>
+    main()
+    {
+        int n,i,a,j,max,min,temp;
+        printf("Enter number : ");
+        scanf("%d",&n);
+        printf("Enter array elements...\n");
+     
+        for(i=0;i<n;i++)
+        {
+            printf("Enter element %d : ",i+1);
+            scanf("%d",&a);
+        }
+     
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<i;j++)
+                if(a)
+                {
+                    temp=a;
+                    a;
+                    a=temp;
+                }
+        }
+     
+        printf("\nAscending order....\n");
+        for(i=0;i<n;i++)
+        {
+            printf(" %d ",a);
+        }
+     
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<i;j++)
+                if(a)
+                {
+                    temp=a;
+                    a;
+                    a=temp;
+                }
+        }
+     
+        printf("\nDescending order.....\n");
+        for(i=0;i<n;i++)
+        {
+            printf(" %d ",a);
+        }
+    }
+
+
+============================================================================================
+
+
+073. Write a program to accept a mXn matrix and reprint it in matrix form in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,m,n,a;
+      clrscr();
+      printf("Enter order of matrix :\n");
+            scanf("%d%d",&m,&n);
+      printf("Enter matrix elements.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<n;j++)
+          scanf("%d",&a);
+     
+      for(i=0;i<m;i++)
+      {
+        for(j=0;j<n;j++)
+          printf("%d ",a);
+        printf("\n");
+      }
+      getch();
+    }
+
+==============================================================================================
+
+
+074. Write a program to accept two M x N matrices and add them in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,m,n,a;
+      clrscr();
+      printf("Enter order of matrix :\n");
+      scanf("%d%d",&m,&n);
+      printf("Enter matrix elements of first matrix.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<n;j++)
+          scanf("%d",&a);
+     
+      printf("Enter matrix elements of second matrix.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<n;j++)
+          scanf("%d",&b);
+     
+      for(i=0;i<m;i++)
+        for(j=0;j<n;j++)
+          c;
+     
+      printf("Resultant matrix .....\n");
+      for(i=0;i<m;i++)
+      {
+        for(j=0;j<n;j++)
+          printf("%d ",c);
+        printf("\n");
+      }
+      getch();
+    }
+
+===================================================================================================
+
+
+075. Write a program to accept a M x N matrix and print addition of their array elements in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,m,n,a,sum=0;
+      clrscr();
+      printf("Enter order of matrix :\n");
+      scanf("%d%d",&m,&n);
+      printf("Enter matrix elements.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<n;j++)
+          scanf("%d",&a);
+     
+      for(i=0;i<m;i++)
+        for(j=0;j<n;j++)
+          sum=sum+a;
+     
+      printf("\nSum of matrix elements.....%d",sum);
+      getch();
+    }
+
+================================================================================================
+
+076. Write a program to accept a M x N matrix and print addition of diagonal elements of that matrix in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,m,a,sum=0;
+      clrscr();
+      printf("Enter order of matrix :\n");
+      scanf("%d",&m);
+      printf("Enter matrix elements.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<m;j++)
+          scanf("%d",&a);
+     
+      for(i=0;i<m;i++)
+        for(j=0;j<m;j++)
+          if(i==j)
+            sum=sum+a;
+     
+      printf("\nSum of diagonal elements.....%d",sum);
+      getch();
+    }
+
+===============================================================================================
+
+
+077. Write a program to accept a M x N matrix and print addition of upper triangular matrix elements in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,m,a,sum=0;
+      clrscr();
+      printf("Enter order of matrix :\n");
+      scanf("%d",&m);
+      printf("Enter matrix elements.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<m;j++)
+          scanf("%d",&a);
+     
+      for(i=0;i<m;i++)
+        for(j=0;j<m;j++)
+          if(i<j)
+            sum=sum+a;
+     
+      printf("\nSum of upper triangular elements.....%d",sum);
+      getch();
+    }
+
+
+=============================================================================================
+078. Write a program to accept a M x N matrix and print addition of lower triangular matrix elements in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,m,a,sum=0;
+      clrscr();
+      printf("Enter order of matrix :\n");
+      scanf("%d",&m);
+      printf("Enter matrix elements.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<m;j++)
+          scanf("%d",&a);
+     
+      for(i=0;i<m;i++)
+        for(j=0;j<m;j++)
+          if(i<j)
+            sum=sum+a;
+     
+      printf("\nSum of upper triangular elements.....%d",sum);
+      getch();
+    }
+
+===============================================================================================
+
+078. Write a program to accept a M x N matrix and print addition of lower triangular matrix elements in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,m,a,sum=0;
+      clrscr();
+      printf("Enter order of matrix :\n");
+      scanf("%d",&m);
+      printf("Enter matrix elements.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<m;j++)
+          scanf("%d",&a);
+     
+      for(i=0;i<m;i++)
+        for(j=0;j<m;j++)
+          if(i>j)
+            sum=sum+a;
+     
+      printf("\nSum of lower triangular elements.....%d",sum);
+      getch();
+    }
+
+==============================================================================================
+
+079. Write a program to accept two M X N matrices and print their multiplication in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,m,n,k,a;
+      clrscr();
+      printf("Enter order of matrix :\n");
+      scanf("%d%d",&m,&n);
+      printf("Enter matrix elements of first matrix.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<n;j++)
+          scanf("%d",&a);
+     
+      printf("Enter matrix elements of second matrix.....\n");
+      for(i=0;i<m;i++)
+        for(j=0;j<n;j++)
+          scanf("%d",&b);
+     
+      for(i=0;i<m;i++)
+        for(j=0;j<n;j++)
+        {
+          c=0;
+          for(k=0;k<n;k++)
+            c;
+        }
+     
+      printf("Resultant matrix .....\n");
+      for(i=0;i<m;i++)
+      {
+        for(j=0;j<n;j++)
+          printf("%d ",c);
+        printf("\n");
+      }
+      getch();
+    }
+
+============================================================================================
+
+080. Write a program to accept a M x N matrix and print it’s transpose matrix in C language
+
+
+    #include<stdio.h>
+    main()
+    {
+        int i,j,m,n,a;
+        printf("Enter order of matrix :\n");
+        scanf("%d%d",&m,&n);
+        printf("Enter matrix elements.....\n");
+        for(i=0;i<m;i++)
+      for(j=0;j<n;j++)
+          scanf("%d",&a);
+     
+        for(i=0;i<n;i++)
+        {
+      for(j=0;j<m;j++)
+          printf("%d ",a);
+      printf("\n");
+        }
+        getch();
+    }
+
+================================================================================================
+
+081. Print string in reverse,its length,in uppercase,lowercase and copy into another string
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<string.h>
+    main()
+    {
+        char *s1,*s2;
+        clrscr();
+        printf("Enter string : ");
+        scanf("%s",s1);
+        printf("Reverse String : %s",strrev(s1));
+        printf("Lenght: %d",strlen(s1));
+        printf("String in UPPER CASE : %s",strupr(s1));
+        printf("String in lower case : %s",strlwr(s1));
+        strcpy(s2,s1);
+        printf("\nCopied string is...%s",s2);
+        getch();
+    }
+
+===============================================================================================
+
+082. Write a program to accept a string and print no. of aphlabets, digits, special symbols present in it in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<ctype.h>
+    main()
+    {
+      char *s;
+      int i,alphabets=0,digits=0,symbols=0;
+      clrscr();
+      printf("Enter string : ");
+      scanf("%s",s);
+      for(i=0;s!='\0';i++)
+        if(isalpha(s))
+          alphabets++;
+        else if(isdigit(s))
+          digits++;
+        else
+          symbols++;
+      printf("\nAphabets : %d",alphabets);
+      printf("\nDigits   : %d",digits);
+      printf("\nSymbols  : %d",symbols);
+      getch();
+    }
+
+
+===========================================================================================
+
+083. Write a program to accept two strings and compare them in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<string.h>
+    main()
+    {
+      char *s1,*s2;
+      clrscr();
+      printf("Enter string 1 : ");
+      scanf("%s",s1);
+      printf("Enter string 2 : ");
+      scanf("%s",s2);
+      if(strcmp(s1,s2)>0)
+        printf("\nString 1 is greater..");
+      else if(strcmp(s1,s2)<0)
+        printf("\nString 2 is greater..");
+      else
+        printf("\nStrings are equal..");
+      getch();
+    }
+
+==========================================================================================
+
+084. Write a program to accept two strings and concatenate them in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<string.h>
+    main()
+    {
+      char *s1,*s2;
+      clrscr();
+      printf("Enter string 1 : ");
+      scanf("%s",s1);
+      printf("Enter string 2 : ");
+      scanf("%s",s2);
+      printf("\nConcatinated string is...%s",strcat(s1,s2));
+      getch();
+    }
+
+===============================================================================================
+
+085. Write a program to print length of a given string in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,len=0;
+      char *s;
+      clrscr();
+      printf("Enter the string....");
+      scanf("%s",s);
+      for(i=0;s!='\0';i++)
+        len++;
+      printf("The lenth of the string is...%d",len);
+      getch();
+    }
+
+==============================================================================================
+
+086. Write a program to copy a string into another string in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i;
+      char *s1,*s2;
+      clrscr();
+      printf("Enter the string 1....");
+      scanf("%s",s1);
+      for(i=0;s1!='\0';i++)
+      {
+        s2;
+      }
+      s2='\0';
+      printf("The copied string is...%s",s2);
+      getch();
+    }
+
+
+==============================================================================================
+
+
+087. Write a program to convert given string to UPPER CASE in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i;
+      char *s1;
+      clrscr();
+      printf("Enter the string 1....");
+      scanf("%s",s1);
+      for(i=0;s1!='\0';i++)
+      {
+        if((s1<='z'))
+          s1-32;
+      }
+      printf("Resultant string is...%s",s1);
+      getch();
+    }
+
+==============================================================================================
+
+088. Write a program to convert givern string to lower case in C language
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i;
+      char *s1;
+      clrscr();
+      printf("Enter the string 1....");
+      scanf("%s",s1);
+      for(i=0;s1!='\0';i++)
+      {
+        if((s1<='Z'))
+          s1+32;
+      }
+      printf("Resultant string is...%s",s1);
+      getch();
+    }
+===============================================================================================
+
+
+089. Write a program to concatinate two strings in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,len=0,j;
+      char *s1,*s2;
+      clrscr();
+      printf("Enter the string 1....");
+      scanf("%s",s1);
+      printf("Enter the string 2....");
+      scanf("%s",s2);
+      for(i=0;s1!='\0';i++)
+      {
+             len++;
+      }
+      j=0;
+      for(i=len;s2!='\0';i++)
+      {
+        s1;
+        j++;
+      }
+      s1='\0';
+      printf("Resultant string is...%s",s1);
+      getch();
+    }
+
+====================================================================================
+
+090. Write a program to count no, of alphlabets, digits, special symbols in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,alphabets=0,digits=0,symbols=0;
+      char *s;
+      clrscr();
+      printf("Enter the string 1....");
+      scanf("%s",s);
+      for(i=0;s!='\0';i++)
+      {
+         if(((s<='z')))
+            alphabets++;
+         else if((s<='9'))
+            digits++;
+         else
+            symbols++;
+      }
+      printf("\nAlphabets : %d",alphabets);
+      printf("\nDigits    : %d",digits);
+      printf("\nSymbols   : %d",symbols);
+      getch();
+    }
+===============================================================================================
+091. Write a program to compare two strings in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<process.h>
+    main()
+    {
+      int i;
+      char *s1,*s2;
+      clrscr();
+      printf("Enter the string 1....");
+      scanf("%s",s1);
+      printf("Enter the string 2....");
+      scanf("%s",s2);
+      for(i=0;s1!='\0';i++)
+      {
+         if(s1)
+          {
+            if(s1)
+              printf("\nString 1 is greater...");
+            else
+              printf("\nString 2 is greater...");
+            getch();
+            exit(0);
+          }
+      }
+      printf("String are equal....");
+      getch();
+    }
+==================================================================================================
+092. Write a program to count all vowels present in the string in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<process.h>
+    main()
+    {
+      int i;
+      char *s1,*s2;
+      clrscr();
+      printf("Enter the string 1....");
+      scanf("%s",s1);
+      printf("Enter the string 2....");
+      scanf("%s",s2);
+      for(i=0;s1!='\0';i++)
+      {
+         if(s1)
+          {
+            if(s1)
+              printf("\nString 1 is greater...");
+            else
+              printf("\nString 2 is greater...");
+            getch();
+            exit(0);
+          }
+      }
+      printf("String are equal....");
+      getch();
+    }
+
+
+=====================================================================================================
+
+092. Write a program to count all vowels present in the string in C language
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,vowel=0;
+      char *s;
+      clrscr();
+      printf("Enter the string 1....");
+      scanf("%s",s);
+      for(i=0;s!='\0';i++)
+      {
+        if((s=='I')||
+          (s=='i'))
+                vowel++;
+      }
+      printf("\nVowels : %d",vowel);
+      getch();
+    }
+
+==========================================================================================
+093. Write a program to reverse the given string in C language
+
+    #include<stdio.h>
+    #include<conio.h>  
+    main()
+    {
+      int i,j,len=0;
+      char *s1,*s2;
+      clrscr();
+      printf("Enter the string ....");
+      scanf("%s",s1);
+      for(i=0;s1!='\0';i++)
+        len++;
+      j=0;
+      for(i=len-1;i>=0;i--)
+      {
+        s2;
+        j++;
+      }
+      s2='\0';
+      printf("\nReversed String : %s",s2);
+      getch();
+    }
+
+=======================================================================================
+094. Write a program to check if the given string is palindrome or not
+
+
+E.g. NITIN, LIRIL, MALAYALAM.
+
+    #include<stdio.h>
+    #include<conio.h>  
+    #include<process.h>
+    main()
+    {
+      int i,j,len=0;
+      char *s1,*s2;
+      clrscr();
+      printf("Enter the string ....");
+      scanf("%s",s1);
+      for(i=0;s1!='\0';i++)
+        len++;
+      j=0;
+      for(i=len-1;i>=0;i--)
+      {
+        s2;
+        j++;
+      }
+      s2='\0';
+      for(i=0;s1!='\0';i++)
+        if(s1)
+        {
+          printf("\nNot a palindrome");
+          getch();
+          exit(0);
+      }
+      printf("Palindrome");
+      getch();
+    }
+
+=========================================================================================
+
+095. Define a structure Employee having elements emp_id, name,etc. Accept data and reprint it
+
+    #include<stdio.h>
+    #include<conio.h>  
+    struct Employee
+    {
+     char name;
+     int emp_id;
+     long phone_no;
+    };
+    main()
+    {
+      struct Employee e;
+      clrscr();
+      printf("Enter name : ");
+      scanf("%s",&e.name);
+      printf("Enter emp_id: ");
+      scanf("%d",&e.emp_id);
+      printf("Enter Phone Number: ");
+      scanf("%ld",&e.phone_no);
+      printf("\n\nEnter name : %s",e.name);
+      printf("\n\nEnter Emp Id       : %d",e.emp_id);
+      printf("\n\nEnter Phone Number : %ld ",e.phone_no);
+      getch();
+    }
+
+================================================================================================
+
+096. Define a structure Student having fields roll_no, name, marks, etc, for 5 students, accept data and reprint
+
+
+    #include<stdio.h>
+    #include<conio.h>  
+    struct Student
+    {
+     char name;
+     int roll_no;
+     int m1,m2,m3;
+    };
+    main()
+    {   int i;
+      struct Student s;
+      clrscr();
+      for(i=0;i<5;i++)
+      {   printf("\nEnter data for Student %d.....\n",i+1);
+        printf("Enter name           : ");
+        scanf("%s",&s.name);
+        printf("Enter Roll No.       : ");
+        scanf("%d",&s.roll_no);
+        printf("Enter marks for sub1 : ");
+        scanf("%d",&s.m1);
+        printf("Enter marks for sub2 : ");
+        scanf("%d",&s.m2);
+        printf("Enter marks for sub3 : ");
+        scanf("%d",&s.m3);
+      }
+      for(i=0;i<5;i++)
+      {   printf("\nStudent   %d\n",i+1);
+        printf("Name    : %s\n",s.name);
+        printf("Roll No.: %d\n",s.roll_no);
+        printf("Sub1    : %d\n",s.m1);
+        printf("Sub2    : %d\n",s.m2);
+        printf("Sub3    : %d\n",s.m3);
+      }
+      getch();
+    }
+
+=============================================================================================
+
+097. Define a structure Employee having elements emp_id, name, DOB, DOJ etc. Accept data and reprint it. (use structure within structure)
+
+    #include<stdio.h>
+    #include<conio.h>  
+    struct Date
+    {
+      int mm,dd,yy;
+    };
+    struct Employee
+    {
+    char name;
+     int emp_id;
+     struct Date DOB,DOJ;
+    };
+    main()
+    {   int i;
+      struct Employee e;
+      clrscr();
+        printf("\nEnter name           : ");
+        scanf("%s",&e.name);
+        printf("\nEnter emp_id.        : ");
+        scanf("%d",&e.emp_id);
+        printf("\nEnter Date of Joining\n ");
+        printf("(dd-mm-yy) : ");
+        scanf("%d-%d-%d", &e.DOJ.dd,&e.DOJ.mm,&e.DOJ.yy);
+        printf("\nEnter Date of birth\n ");
+        printf("(dd-mm-yy) : ");
+        scanf("%d-%d-%d", &e.DOB.dd,&e.DOB.mm,&e.DOB.yy);
+        printf("\nName           : %s",e.name);
+        printf("\nEmployee ID    : %d",e.emp_id);
+        printf("\nEnter DOJ      : %d-%d-%d", e.DOJ.dd,e.DOJ.mm,e.DOJ.yy);
+        printf("\nEnter DOB      : %d-%d-%d", e.DOB.dd,e.DOB.mm,e.DOB.yy);
+      getch();
+    }
+
+==============================================================================================
+
+098. Write a program to read and write a file character by character.
+
+    #include<stdio.h>
+    int main()
+    {
+        FILE *fp;
+        char str;
+        fp = fopen("C:\\myfile.txt", "w");
+        if (fp == NULL)
+        {
+           puts("An error occurred while opening the specified file");
+        }
+         printf("Enter your string:");
+         gets(str);
+         fputs(str, fp);
+         fclose(fp);
+        fp = fopen("C:\\myfile.txt", "r");
+        if (fp == NULL)
+        {
+           puts("An error occurred while opening the specified file");
+        }
+        while(1)
+        {
+           if(fgets(str, 10, fp) ==NULL)
+                break;
+           else
+                printf("%s", str);
+        }
+        fclose(fp);
+        return 0;
+    }
+
+=================================================================================================
+
+100. Merge two files by store data into third one
+
+    #include<stdio.h>
+    #include<stdlib.h>
+    int main()
+    {
+       FILE *fp1 = fopen("file1.txt", "r");
+       FILE *fp2 = fopen("file2.txt", "r");
+       FILE *fp3 = fopen("file3.txt", "w");
+       char c;
+       if (fp1 == NULL || fp2 == NULL || fp3 == NULL)
+       {
+             puts("Could not open files");
+             exit(0);
+       }
+       while ((c = fgetc(fp1)) != EOF)
+          fputc(c, fp3);
+       while ((c = fgetc(fp2)) != EOF)
+          fputc(c, fp3);
+       fclose(fp1);
+       fclose(fp2);
+       fclose(fp3);
+       return 0;
+    }
+
+
+101. Write a program accept a file name from user and print content of that file
+
+    #include<stdio.h>
+    int main(int argc, char *argv)
+    {
+        if ( argc != 2 ){
+             printf( "usage: %s filename", argv );
+        }
+        else 
+        {
+            FILE *file = fopen( argv, "r" );
+            if(file == NULL)
+                 printf("Could not open file\n");
+            else 
+            {
+                int x;
+                while((x=fgetc(file)) != EOF)
+                     printf( "%c", x );
+                fclose( file );
+            }
+        }
+    }
+
+===========================================================================================
+
+
+
+C Program to print "hello" without semicolon
+
+We can print "hello" or "hello world" or anything else in C without using semicolon. There are various ways to do so:
+
+    Using if
+    Using switch
+    Using loop etc.
+
+Program 1: Using if statement
+
+Let's see a simple c example to print "hello world" using if statement and without using semicolon.
+
+    #include<stdio.h>  
+     int main()    
+    {    
+     if(printf("hello world")){}    
+    return 0;  
+    } 
+
+
+Program 2: Using switch statement
+
+Let's see a simple c example to print "hello world" using switch statement and without using semicolon.
+
+    #include<stdio.h>  
+     int main()    
+    {    
+    switch(printf("hello world")){}    
+    return 0;  
+    }   
+
+Output:
+
+hello world
+
+Program 3: Using while loop
+
+Let's see a simple c example to print "hello world" using while loop and without using semicolon.
+
+    #include<stdio.h>  
+     int main()    
+    {    
+       while(!printf("hello world")){}    
+    return 0;  
+    }
+
+===================================================================================================
+
+
+C Program without main() function
+
+We can write c program without using main() function. To do so, we need to use #define preprocessor directive.
+
+Let's see a simple program to print "hello" without main() function.
+
+    #include<stdio.h>    
+     #define start main    
+    void start() {    
+       printf("Hello");    
+    }   
+
+==============================================================================================
+
+C Program to convert Decimal to Binary
+
+Decimal to binary in C: We can convert any decimal number (base-10 (0 to 9)) into binary number(base-2 (0 or 1)) by c program.
+Decimal Number
+
+Decimal number is a base 10 number because it ranges from 0 to 9, there are total 10 digits between 0 to 9. Any combination of digits is decimal number such as 23, 445, 132, 0, 2 etc.
+Binary Number
+
+Binary number is a base 2 number because it is either 0 or 1. Any combination of 0 and 1 is binary number such as 1001, 101, 11111, 101010 etc.
+
+
+Decimal to Binary Conversion Algorithm
+
+    Step 1: Divide the number by 2 through % (modulus operator) and store the remainder in array
+    Step 2: Divide the number by 2 through / (division operator)
+    Step 3: Repeat the step 2 until number is greater than 0
+
+Let's see the c example to convert decimal to binary.
+
+    #include<stdio.h>    
+    #include<stdlib.h>  
+    int main(){  
+    int a[10],n,i;    
+    system ("cls");  
+    printf("Enter the number to convert: ");    
+    scanf("%d",&n);    
+    for(i=0;n>0;i++)    
+    {    
+    a[i]=n%2;    
+    n=n/2;    
+    }    
+    printf("\nBinary of Given Number is=");    
+    for(i=i-1;i>=0;i--)    
+    {    
+    printf("%d",a[i]);    
+    }    
+    return 0;  
+    }  
+
+Output:
+
+Enter the number to convert: 5
+Binary of Given Number is=101 
+
+
+=================================================================================================
+
+C Program to print Alphabet Triangle
+
+     A
+    ABA
+   ABCBA
+  ABCDCBA
+ ABCDEDCBA
+
+
+There are different triangles that can be printed. Triangles can be generated by alphabets or numbers. In this c program, we are going to print alphabet triangles.
+
+Let's see the c example to print alphabet triangle.
+
+    #include<stdio.h>    
+    #include<stdlib.h>  
+    int main(){  
+      int ch=65;    
+        int i,j,k,m;    
+      system("cls");  
+        for(i=1;i<=5;i++)    
+        {    
+            for(j=5;j>=i;j--)    
+                printf(" ");    
+            for(k=1;k<=i;k++)    
+                printf("%c",ch++);    
+                ch--;    
+            for(m=1;m<i;m++)    
+                printf("%c",--ch);    
+            printf("\n");    
+            ch=65;    
+        }    
+    return 0;  
+    }  
+
+
+====================================================================================================
+
+C Program to print Number Triangle
+
+Like alphabet triangle, we can write the c program to print the number triangle. The number triangle can be printed in different ways.
+
+Let's see the c example to print number triangle.
+
+    #include<stdio.h>    
+    #include<stdlib.h>  
+    int main(){  
+      int i,j,k,l,n;    
+    system("cls");  
+    printf("enter the range=");    
+    scanf("%d",&n);    
+    for(i=1;i<=n;i++)    
+    {    
+    for(j=1;j<=n-i;j++)    
+    {    
+    printf(" ");    
+    }    
+    for(k=1;k<=i;k++)    
+    {    
+    printf("%d",k);    
+    }    
+    for(l=i-1;l>=1;l--)    
+    {    
+    printf("%d",l);    
+    }    
+    printf("\n");    
+    }    
+    return 0;  
+    }
+
+enter the range= 4
+   1
+  121
+ 12321
+1234321 
+
+===================================================================================================
+
+
+
+The LCM of two integers n1 and n2 is the smallest positive integer that is perfectly divisible by both n1 and n2 (without a remainder). For example: the LCM of 72 and 120 is 360.
+Example #1: LCM using while Loop and if Statement
+
+    #include <stdio.h>
+    int main()
+    {
+        int n1, n2, minMultiple;
+        printf("Enter two positive integers: ");
+        scanf("%d %d", &n1, &n2);
+        // maximum number between n1 and n2 is stored in minMultiple
+        minMultiple = (n1>n2) ? n1 : n2;
+        // Always true
+        while(1)
+        {
+            if( minMultiple%n1==0 && minMultiple%n2==0 )
+            {
+                printf("The LCM of %d and %d is %d.", n1, n2,minMultiple);
+                break;
+            }
+            ++minMultiple;
+        }
+        return 0;
+    }
+
+Output
+
+Enter two positive integers: 72
+120
+The LCM of 72 and 120 is 360.
+
+In this program, the integers entered by the user are stored in variable n1 and n2 respectively.
+
+The largest number among n1 and n2 is stored in minMultiple. The LCM of two numbers cannot be less than minMultiple.
+
+================================================================================================
+
+
+The LCM of two numbers can also be found using the formula:
+
+LCM = (num1*num2)/GCD
+
+Learn more on, how to find the GCD of two numbers in C programming.
+Example #2: LCM Calculation by Finding GCD
+
+    #include <stdio.h>
+    int main()
+    {
+        int n1, n2, i, gcd, lcm;
+        printf("Enter two positive integers: ");
+        scanf("%d %d",&n1,&n2);
+        for(i=1; i <= n1 && i <= n2; ++i)
+        {
+            // Checks if i is factor of both integers
+            if(n1%i==0 && n2%i==0)
+                gcd = i;
+        }
+        lcm = (n1*n2)/gcd;
+        printf("The LCM of two numbers %d and %d is %d.", n1, n2, lcm);
+        return 0;
+    }
+
+
+==================================================================================================
+
+
+
+The HCF or GCD of two integers is the largest integer that can exactly divide both numbers (without a remainder).
+
+There are many ways to find the greatest common divisor in C programming.
+Example #1: GCD Using for loop and if Statement
+
+    #include <stdio.h>
+    int main()
+    {
+        int n1, n2, i, gcd;
+        printf("Enter two integers: ");
+        scanf("%d %d", &n1, &n2);
+        for(i=1; i <= n1 && i <= n2; ++i)
+        {
+            // Checks if i is factor of both integers
+            if(n1%i==0 && n2%i==0)
+                gcd = i;
+        }
+        printf("G.C.D of %d and %d is %d", n1, n2, gcd);
+        return 0;
+    }
+
+In this program, two integers entered by the user are stored in variable n1 and n2.Then, for loop is iterated until i is less than n1 and n2.
+
+In each iteration, if both n1 and n2 are exactly divisible by i, the value of i is assigned to gcd.
+
+When the for loop is completed, the greatest common divisor of two numbers is stored in variable gcd.
+Example #2: GCD Using while loop and if...else Statement
+
+    #include <stdio.h>
+    int main()
+    {
+        int n1, n2;
+        
+        printf("Enter two positive integers: ");
+        scanf("%d %d",&n1,&n2);
+        while(n1!=n2)
+        {
+            if(n1 > n2)
+                n1 -= n2;
+            else
+                n2 -= n1;
+        }
+        printf("GCD = %d",n1);
+        return 0;
+    }
+
+===============================================================================================
+
+
+Example #3: GCD for both positive and negative numbers
+
+    #include <stdio.h>
+    int main()
+    {
+        int n1, n2;
+        printf("Enter two integers: ");
+        scanf("%d %d",&n1,&n2);
+        // if user enters negative number, sign of the number is changed to positive
+        n1 = ( n1 > 0) ? n1 : -n1;
+        n2 = ( n2 > 0) ? n2 : -n2;
+        while(n1!=n2)
+        {
+            if(n1 > n2)
+                n1 -= n2;
+            else
+                n2 -= n1;
+        }
+        printf("GCD = %d",n1);
+        return 0;
+    }
+
+Output
+
+Enter two integers: 81
+-153
+GCD = 9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
